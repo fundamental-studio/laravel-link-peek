@@ -1,0 +1,55 @@
+{
+    "name": "fundamental-studio/laravel-peekr",
+    "description": "",
+    "type": "library",
+    "homepage": "https://www.fundamental.bg",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Konstantin Rachev",
+            "email": "konstantin@fundamental.bg",
+            "homepage": "https://www.fundamental.bg"
+        },
+        {
+            "name": "Vanya Ananieva",
+            "email": "vanya@fundamental.bg",
+            "homepage": "https://www.fundamental.bg"
+        },
+        {
+            "name": "Fundamental Studio Ltd",
+            "email": "info@fundamental.bg",
+            "homepage": "https://www.fundamental.bg"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Fundamental\\Peekr\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.0",
+        "phpunit/phpunit": "^9.5"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Fundamental\\Peekr\\PeekrServiceProvider"
+            ],
+            "aliases": {
+                "Peekr": "Fundamental\\Peekr\\Facades\\Facade"
+            }
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
